@@ -22,6 +22,7 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          hover: "hsl(var(--primary-hover))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -30,6 +31,10 @@ export default {
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
+        },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",
@@ -46,6 +51,15 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        todo: {
+          completed: "hsl(var(--todo-completed))",
+          pending: "hsl(var(--todo-pending))",
+          priority: {
+            high: "hsl(var(--todo-priority-high))",
+            medium: "hsl(var(--todo-priority-medium))",
+            low: "hsl(var(--todo-priority-low))",
+          }
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
