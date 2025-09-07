@@ -55,7 +55,7 @@ export const TodoFilters = ({
                   variant={filter === key ? "default" : "ghost"}
                   size="sm"
                   onClick={() => onFilterChange(key)}
-                  className={`relative px-3 py-1.5 text-sm transition-all duration-200 ${
+                  className={`group relative px-3 py-1.5 text-sm transition-all duration-200 ${
                     filter === key 
                       ? 'bg-background shadow-sm text-foreground hover:bg-primary hover:text-primary-foreground' 
                       : 'hover:bg-primary hover:text-primary-foreground'
@@ -63,10 +63,10 @@ export const TodoFilters = ({
                 >
                   {label}
                   {count > 0 && (
-                    <span className={`ml-1.5 px-1.5 py-0.5 rounded-full text-xs ${
+                    <span className={`ml-1.5 px-1.5 py-0.5 rounded-full text-xs font-medium ${
                       filter === key 
-                        ? 'bg-primary/10 text-primary' 
-                        : 'bg-muted-foreground/10 text-muted-foreground'
+                        ? 'bg-primary/20 text-primary group-hover:bg-primary-foreground/20 group-hover:text-primary-foreground' 
+                        : 'bg-muted-foreground/20 text-muted-foreground group-hover:bg-primary-foreground/20 group-hover:text-primary-foreground'
                     }`}>
                       {count}
                     </span>
