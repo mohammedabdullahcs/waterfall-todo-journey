@@ -57,7 +57,7 @@ export const TodoFilters = ({
                   onClick={() => onFilterChange(key)}
                   className={`relative px-3 py-1.5 text-sm transition-all duration-200 ${
                     filter === key 
-                      ? 'bg-background shadow-sm text-foreground' 
+                      ? 'bg-background shadow-sm text-foreground hover:bg-primary hover:text-primary-foreground' 
                       : 'hover:bg-primary hover:text-primary-foreground'
                   }`}
                 >
