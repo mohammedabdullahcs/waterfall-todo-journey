@@ -8,6 +8,9 @@ import path from 'path'
 export default defineConfig({
   base: '/waterfall-todo-journey/',
   plugins: [react()],
+  server: {
+    port: 8080
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src')
